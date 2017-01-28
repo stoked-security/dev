@@ -115,6 +115,7 @@ installIfMissing libreadline-dev
 installIfMissing libncurses5
 installIfMissing libncurses5-dev
 installIfMissing pkg-config
+installIfMissing dh-autoreconf
 # libsqliteodbc deps
 installIfMissing cdbs
 installIfMissing libsqlite0-dev
