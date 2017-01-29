@@ -93,11 +93,11 @@ else
 fi
 echo "#"
 
-echo "# adding additional repo tools"
-installIfMissing software-properties-common
-installIfMissing python-software-properties
-echo "# - done"
-echo
+#echo "# adding additional repo tools"
+#installIfMissing software-properties-common
+#installIfMissing python-software-properties
+#echo "# - done"
+#echo
 
 echo "# checking build dependencies"
 installIfMissing autoconf
