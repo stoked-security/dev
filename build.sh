@@ -193,6 +193,7 @@ fi
 if [ "$COMPONENT" == "all" ] || [ "$COMPONENT" == "openbts" ]; then
 	echo "# openbts - building Debian package"
 	sayAndDo cd openbts
+	sayAndDo sed -i "s/\$\(confflags\)/$EXTRA_CONFIGURE_FLAGS/g" debian/rules
 	sayAndDo dpkg-buildpackage -us -uc
 	sayAndDo cd ..
 	sayAndDo mv openbts_* $BUILDNAME
