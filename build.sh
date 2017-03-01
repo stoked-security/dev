@@ -130,8 +130,8 @@ installIfMissing uuid-dev
 installIfMissing libjansson-dev
 installIfMissing libxml2-dev
 # zmq
-installIfMissing libzmq3-dev
-installIfMissing libzmq3
+installIfMissing libzmq-dev
+installIfMissing libzmq1
 installIfMissing python-zmq
 if [ "$MANUFACTURER" == "Ettus" ]; then
 	dpkg -s uhd > /dev/null
